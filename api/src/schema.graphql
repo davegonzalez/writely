@@ -1,0 +1,31 @@
+# import Article, ArticleSubscriptionPayload from "./generated/prisma.graphql"
+
+type Query {
+  info: String!
+  articles: [Article!]!
+  article(id: ID!): Article
+  articleByTitle(title: String!): [Article!]!
+}
+
+type Mutation {
+  createArticle(title: String!, body: String!): Article!
+  updateArticle(title: String!, body: String!): Article!
+  signup(email: String!, password: String!, name: String!): AuthPayload
+  login(email: String!, password: String!): AuthPayload
+}
+
+type User {
+  id: ID!
+  name: String!
+  email: String!
+  articles: [Article!]!
+}
+
+type AuthPayload {
+  token: String
+  user: User
+}
+
+type Subscription {
+  newArticleSubscribe: ArticleSubscriptionPayload
+}

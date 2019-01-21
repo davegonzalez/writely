@@ -1,0 +1,33 @@
+{
+  "name": "my-razzle-app",
+  "version": "2.0.0-alpha.8",
+  "license": "MIT",
+  "scripts": {
+    "start": "razzle start",
+    "build": "razzle build",
+    "test": "razzle test --env=jsdom",
+    "start:prod": "NODE_ENV=production node build/server.js"
+  },
+  "dependencies": {
+    "@reach/router": "^1.1.1",
+    "apollo-boost": "^0.1.16",
+    "apollo-cache-inmemory": "^1.2.10",
+    "apollo-client": "^2.4.2",
+    "apollo-link": "^1.2.3",
+    "apollo-link-http": "^1.5.5",
+    "apollo-link-state": "^0.4.2",
+    "cors": "^2.8.4",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "express": "^4.16.3",
+    "graphql-tag": "^2.9.2",
+    "isomorphic-fetch": "^2.2.1",
+    "node-fetch": "^2.2.0",
+    "razzle": "^2.4.0",
+    "react": "^16.5.1",
+    "react-apollo": "^2.1.11",
+    "react-dom": "^16.5.1"
+  }
+}

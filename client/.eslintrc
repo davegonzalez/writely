@@ -1,0 +1,44 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb", "prettier"],
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "arrow-body-style": [0],
+    "max-len": [1, { "code": 80, "tabWidth": 2 }],
+    "new-cap": 0,
+    "indent": [1, 2, { "ignoredNodes": ["TemplateLiteral"] }],
+    "import/no-unresolved": 1,
+    "import/no-extraneous-dependencies": 0,
+    "import/extensions": 0,
+    "import/no-named-as-default": [0],
+    "no-unused-expressions": [0],
+    "arrow-parens": [1, "as-needed"],
+    "jsx-quotes": [2, "prefer-single"],
+    "operator-linebreak": [1, "after"],
+    "array-bracket-spacing": [
+      1,
+      "always",
+      { "objectsInArrays": false, "arraysInArrays": false }
+    ],
+    "jsx-a11y/label-has-associated-control": [0],
+    "react/jsx-curly-spacing": [0, "always"],
+    "react/jsx-boolean-value": [0],
+    "react/no-danger": [0],
+    "react/no-array-index-key": [0],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ]
+  }
+}
